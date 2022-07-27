@@ -1,0 +1,114 @@
+body {
+    background-color: rgb(24, 78, 63);
+    width: auto;
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.required {
+    background-color: plum;
+}
+#read-only {
+    background-color: lightgray;
+    width: 200px;
+    height: 20px;
+    font-size: 15px;
+}
+input:read-only {
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+    border-bottom: 5px solid darkgray;
+    border-right: 5px solid darkgray;
+}
+#email {
+    width: 200px;
+    height: 20px;
+    font-size: 15px;
+}
+input[type=email]:focus {
+    border-left: 5px solid red;
+    border-top: 5px solid red;
+    border-right: 5px solid pink;
+    border-bottom: 5px solid pink;
+    transition: 0.5s;
+  }
+#password {
+    width: 200px;
+    height: 20px;
+    font-size: 15px;
+}
+input[type=password]:focus {
+    border-left: 5px solid red;
+    border-top: 5px solid red;
+    border-right: 5px solid pink;
+    border-bottom: 5px solid pink;
+    transition: 0.5s;
+  }
+input[type=number]:focus {
+    border-left: 5px solid red;
+    border-top: 5px solid red;
+    border-right: 5px solid pink;
+    border-bottom: 5px solid pink;
+    transition: 0.5s;
+}
+#about {
+    width: 300px;
+    height: 100px;
+    border-left: 5px solid pink;
+    border-top: 5px solid pink;
+    border-right: 5px solid red;
+    border-bottom: 5px solid red;
+}
+#about:focus {
+    border-left: 5px solid red;
+    border-top: 5px solid red;
+    border-right: 5px solid pink;
+    border-bottom: 5px solid pink;
+    transition: 0.5s;
+}
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+input[type=checkbox]:checked + label {
+    color: blue;
+}
+button {
+    width: 100px;
+    height: 35px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border-top: 5px solid gray;
+    border-left: 5px solid gray;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+button:hover {
+    background-color: darkgreen;
+    transition: 0.5s;
+}
+button:focus {
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid grey;
+    border-bottom: 5px solid grey;
+    transition: 0.5s;
+}
+input:valid,
+textarea:valid,
+input:in-range {
+  border: 5px solid green;
+}
+input:invalid,
+textarea:invalid,
+input:out-of-range {
+  border: 5px solid red;
+}
+input:required,
+textarea:required {
+    border-left: 5px solid pink;
+    border-top: 5px solid pink;
+}
